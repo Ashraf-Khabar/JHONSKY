@@ -1,33 +1,79 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import logo from '../Img/jhonsky_logo.png';
 
 const Navbar = () => {
-
     return (
-        <div >
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+        <div data-theme="luxury">
+            <nav className="navbar navbar-expand-lg">
+                <div className="container-fluid">
+                    <Link to="/" className="navbar-brand mx-auto">
+                        <img src={logo} width={120} alt="Logo" />
+                    </Link>
+                    <button
+                        className="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span className="navbar-toggler-icon" />
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul className="navbar-nav mx-auto">
+                            <li className="nav-item">
+                                <Link className="nav-link label-text" to="/about-us">
+                                    About us
+                                </Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Features</a>
+                            <li className="nav-item">
+                                <Link className="nav-link label-text" to="/our-services">
+                                    Our Services
+                                </Link>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Pricing</a>
+                            <li className="nav-item">
+                                <Link className="nav-link label-text" to="/our-portfolio">
+                                    Our Portfolio
+                                </Link>
                             </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown link
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li className="nav-item">
+                                <Link className="nav-link label-text" to="/blog">
+                                    Blog
+                                </Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link label-text" to="/contact">
+                                    Contact
+                                </Link>
+                            </li>
+                            <li className="nav-item dropdown">
+                                <Link
+                                    className="nav-link dropdown-toggle"
+                                    to="#"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false"
+                                >
+                                    {logo}
+                                </Link>
+                                <ul className="dropdown-menu">
+                                    <li>
+                                        <Link className="dropdown-item" href="#">
+                                            Action
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="dropdown-item" href="#">
+                                            Another action
+                                        </Link>
+                                    </li>
+                                    <li>
+                                        <Link className="dropdown-item" href="#">
+                                            Something else here
+                                        </Link>
+                                    </li>
                                 </ul>
                             </li>
                         </ul>
@@ -35,7 +81,7 @@ const Navbar = () => {
                 </div>
             </nav>
         </div>
-    )
+    );
 }
 
-export default Navbar; 
+export default Navbar;

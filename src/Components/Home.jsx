@@ -1,11 +1,13 @@
+import YourCreativity from "../Sections/YourCreativity";
+import "../index.css"
 
 const Home = () => {
 
     return (
-        <div>
-            <p>Home Page</p>
+        <div data-theme="luxury">
+            <YourCreativity />
         </div>
     )
 }
 
-export default Home ; 
+export default Home; 
