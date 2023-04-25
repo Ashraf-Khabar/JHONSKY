@@ -1,19 +1,18 @@
 import {BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "./Shared/Navbar";
+import Navbar from "./Shared/NavBar/Navbar.jsx";
 import Home from "./Components/Home";
 import "./index.css"
 
 function App() {
   return (
     <Router>
-      <div className="App">
+      <div className="">
         <Navbar />
-        <div className='content'>
+        <div className='content bg-background'>
           <Switch>
             <Route exact path='/'>
               <Home />
             </Route>
-            
           </Switch>
         </div>
       </div>

@@ -1,0 +1,45 @@
+/* Navbar.css */
+
+.nav-item:hover {
+    color: white;
+    /* Change the text color to white */
+    text-shadow: none;
+    /* Remove the shadow effect */
+}
+
+/* Navbar item styles */
+.navbar-nav li.nav-item {
+    margin-right: 10px;
+    /* Add margin between navbar items */
+}
+
+/* Hover effect styles */
+.navbar-nav li.nav-item:hover .nav-link {
+    color: #ffffff;
+    /* Set hover color to white */
+}
+
+/* Dropdown menu styles */
+.navbar-nav .dropdown-menu {
+    background-color: #ffffff;
+    /* Set background color for dropdown menu */
+}
+
+.navbar-nav .dropdown-item {
+    color: #000000;
+    /* Set color for dropdown menu items */
+}
+
+.navbar-nav .dropdown-item:hover {
+    color: #ffffff;
+    /* Set hover color for dropdown menu items to white */
+    background-color: #000000;
+    /* Set background color for dropdown menu items on hover */
+}
+
+/* Update the color of the navbar-toggler-icon class to white */
+.navbar-toggler-icon {
+    color: #fff; /* Update to desired color */
+}
+
+

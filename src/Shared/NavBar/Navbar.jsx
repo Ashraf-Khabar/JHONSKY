@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../Img/jhonsky_logo.png';
+import logo from '../../Img/jhonsky_logo.png';
+import './Navbar.css'
 
 const Navbar = () => {
     return (
         <div data-theme="">
-            <nav data-theme="luxury" className="navbar navbar-expand-lg bg-background">
+            <nav data-theme="luxury" className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <Link to="/" className="navbar-brand mx-auto">
                         <img src={logo} width={120} alt="Logo" />
@@ -19,7 +20,11 @@ const Navbar = () => {
                         aria-expanded="false"
                         aria-label="Toggle navigation"
                     >
-                        <span className="navbar-toggler-icon" />
+                        <span className="navbar-toggler-icon">
+                            <span style={{ background: 'gold' }}></span>
+                            <span style={{ background: 'gold' }}></span>
+                            <span style={{ background: 'gold' }}></span>
+                        </span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav mx-auto">
