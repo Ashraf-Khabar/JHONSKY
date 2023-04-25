@@ -20,5 +20,5 @@ const YourCreativity = () => {
     )
 }
 
-export default YourCreativity; 
+export default YourCreativity;
 

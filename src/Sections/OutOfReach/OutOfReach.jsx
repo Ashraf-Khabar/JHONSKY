@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../Img/FirstOne.jpg';
+import logo from '../../Img/Reach.jpg';
 import './OutOfReach.css'; // Add the path to your CSS file
 
 const OutOfReach = () => {
