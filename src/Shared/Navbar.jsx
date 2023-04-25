@@ -4,8 +4,8 @@ import logo from '../Img/jhonsky_logo.png';
 
 const Navbar = () => {
     return (
-        <div data-theme="luxury">
-            <nav className="navbar navbar-expand-lg">
+        <div data-theme="">
+            <nav data-theme="luxury" className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                     <Link to="/" className="navbar-brand mx-auto">
                         <img src={logo} width={120} alt="Logo" />
@@ -49,15 +49,6 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <Link
-                                    className="nav-link dropdown-toggle"
-                                    to="#"
-                                    role="button"
-                                    data-bs-toggle="dropdown"
-                                    aria-expanded="false"
-                                >
-                                    {logo}
-                                </Link>
                                 <ul className="dropdown-menu">
                                     <li>
                                         <Link className="dropdown-item" href="#">
