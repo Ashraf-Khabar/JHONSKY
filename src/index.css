@@ -15,3 +15,11 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.bg-background {
+  background-image: url('./Img/background.jpg');
+  /* Replace with the path to your background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}

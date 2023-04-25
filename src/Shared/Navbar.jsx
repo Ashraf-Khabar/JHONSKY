@@ -5,7 +5,7 @@ import logo from '../Img/jhonsky_logo.png';
 const Navbar = () => {
     return (
         <div data-theme="">
-            <nav data-theme="luxury" className="navbar navbar-expand-lg">
+            <nav data-theme="luxury" className="navbar navbar-expand-lg bg-background">
                 <div className="container-fluid">
                     <Link to="/" className="navbar-brand mx-auto">
                         <img src={logo} width={120} alt="Logo" />
