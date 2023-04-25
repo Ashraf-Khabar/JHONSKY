@@ -5,6 +5,7 @@ import OutOfReach from '../Sections/OutOfReach/OutOfReach';
 import Passion from '../Sections/Passion/Passion';
 import YourCreativity from '../Sections/YourCreativity/YourCreativity';
 import '../index.css';
+import WhatWeDo from '../Sections/WhatWeDo/WhatWeDo';
 
 const Home = () => {
     return (
@@ -15,7 +16,9 @@ const Home = () => {
                 <OutOfReach />
                 <Passion />
             </Carousel>
-            
+            <div style={{ margin: '-50px 0 0 0' }}> {/* Adjust the margin value as needed */}
+                <WhatWeDo />
+            </div>
         </div>
     );
 };
