@@ -20,7 +20,7 @@ const OutOfReach = () => {
     }, []);
 
     return (
-        <div data-theme="luxury" className="hero min-h-screen"> {/* Add the "bg-background" class for the background */}
+        <div data-theme="luxury" className="hero min-h-screen bg-background"> {/* Add the "bg-background" class for the background */}
             <div className="hero-content flex-col lg:flex-row-reverse">
                 <img src={logo} className="max-w-sm mask mask-squircle rounded-lg shadow-2xl rounded-full" />
                 <div>

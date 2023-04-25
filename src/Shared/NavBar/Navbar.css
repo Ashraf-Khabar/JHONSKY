@@ -39,7 +39,11 @@
 
 /* Update the color of the navbar-toggler-icon class to white */
 .navbar-toggler-icon {
-    color: #fff; /* Update to desired color */
+    color: #fff;
+    /* Update to desired color */
 }
 
-
+/* styles.css */
+.golden-toggle {
+    background: gold !important;
+}

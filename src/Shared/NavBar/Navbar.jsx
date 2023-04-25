@@ -6,7 +6,7 @@ import './Navbar.css'
 const Navbar = () => {
     return (
         <div data-theme="">
-            <nav data-theme="luxury" className="navbar navbar-expand-lg">
+            <nav data-theme="luxury" className="navbar navbar-expand-lg ">
                 <div className="container-fluid">
                     <Link to="/" className="navbar-brand mx-auto">
                         <img src={logo} width={120} alt="Logo" />
@@ -29,22 +29,22 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item">
-                                <Link className="nav-link label-text" to="/about-us">
+                                <Link className="nav-link label-text" to="/">
                                     About us
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link label-text" to="/our-services">
+                                <Link className="nav-link label-text" to="/">
                                     Our Services
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link label-text" to="/our-portfolio">
+                                <Link className="nav-link label-text" to="/">
                                     Our Portfolio
                                 </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link label-text" to="/blog">
+                                <Link className="nav-link label-text" to="/">
                                     Blog
                                 </Link>
                             </li>
