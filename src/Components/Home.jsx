@@ -16,7 +16,7 @@ const Home = () => {
                 <OutOfReach />
                 <Passion />
             </Carousel>
-            <div> {/* Adjust the margin value as needed */}
+            <div style={{ marginTop: "-40px" }}>
                 <WhatWeDo />
             </div>
         </div>

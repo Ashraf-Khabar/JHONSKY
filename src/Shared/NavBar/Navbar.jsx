@@ -19,13 +19,15 @@ const Navbar = () => {
                         aria-controls="navbarNavDropdown"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
+                        style={{ backgroundColor: 'gold' }}
                     >
                         <span className="navbar-toggler-icon">
-                            <span style={{ background: 'gold' }}></span>
-                            <span style={{ background: 'gold' }}></span>
-                            <span style={{ background: 'gold' }}></span>
+                            <span style={{ background: 'white' }}></span>
+                            <span style={{ background: 'white' }}></span>
+                            <span style={{ background: 'white' }}></span>
                         </span>
                     </button>
+
                     <div className="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul className="navbar-nav mx-auto">
                             <li className="nav-item">
