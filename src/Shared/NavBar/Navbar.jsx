@@ -5,79 +5,45 @@ import './Navbar.css'
 
 const Navbar = () => {
     return (
-        <div data-theme="">
-            <nav data-theme="luxury" className="navbar navbar-expand-lg ">
-                <div className="container-fluid">
-                    <Link to="/" className="navbar-brand mx-auto">
-                        <img src={logo} width={120} alt="Logo" />
+        <div data-theme="luxury">
+            <div className="container-fluid">
+                <nav className="navbar navbar-expand-md navbar-dark">
+                    <Link to="/" className="navbar-brand" href="#">
+                        <img src={logo} width={150} />
                     </Link>
                     <button
                         className="navbar-toggler"
                         type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown"
+                        data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent"
                         aria-expanded="false"
                         aria-label="Toggle navigation"
-                        style={{ backgroundColor: 'gold' }}
                     >
-                        <span className="navbar-toggler-icon">
-                            <span style={{ background: 'white' }}></span>
-                            <span style={{ background: 'white' }}></span>
-                            <span style={{ background: 'white' }}></span>
-                        </span>
+                        <span className="navbar-toggler-icon" />
                     </button>
-
-                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul className="navbar-nav mx-auto">
+                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul className="navbar-nav mr-auto">
                             <li className="nav-item">
-                                <Link className="nav-link label-text" to="/">
-                                    About us
-                                </Link>
+                                <a className="nav-link " href="#">
+                                    Articles
+                                </a>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link label-text" to="/">
-                                    Our Services
-                                </Link>
+                                <a className="nav-link " href="#">
+                                    Articles
+                                </a>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link label-text" to="/">
-                                    Our Portfolio
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link label-text" to="/">
-                                    Blog
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link className="nav-link label-text" to="/contact">
+                                <a className="nav-link " href="#">
                                     Contact
-                                </Link>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <ul className="dropdown-menu">
-                                    <li>
-                                        <Link className="dropdown-item" href="#">
-                                            Action
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link className="dropdown-item" href="#">
-                                            Another action
-                                        </Link>
-                                    </li>
-                                    <li>
-                                        <Link className="dropdown-item" href="#">
-                                            Something else here
-                                        </Link>
-                                    </li>
-                                </ul>
+                                </a>
                             </li>
                         </ul>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </div>
+
         </div>
     );
 }
