@@ -2,6 +2,10 @@ import React from 'react';
 import logo from '../../Img/whatWeDo.jpg';
 import './WhatWeDo.css'; // Add the path to your CSS file
 import logo_jhonsky from '../../Img/jhonsky_logo.png'
+import cs from '../../Img/CS.png'
+import as from '../../Img/AS.png'
+import mr from '../../Img/MR.png'
+
 const WhatWeDo = () => {
     return (
         <div data-theme="luxury" className="hero min-h-screen bg-background"> {/* Add the "bg-background" class for the background */}
@@ -34,33 +38,91 @@ const WhatWeDo = () => {
                     </p>
                     <br /><br />
 
+
                     <div class="p-8">
-                       
-                        <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
+                        <p class="text-3xl font-bold text-center text-gray-800 dark:text-white">
+                            Our clients
+                        </p>
+                        <div class="flex flex-col items-center md:flex-row justify evenly">
                             <div class="p-4">
-                                <div class="flex-col  flex justify-center items-center">
-                                    <div class="flex-shrink-0">
-                                        <a href="#" class="relative block">
-                                            <img alt="profil" src={logo_jhonsky} class="mx-auto" />
-                                        </a>
-                                    </div>
-                                    
+                                <div class="mb-4 text-center opacity-90">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src={logo_jhonsky} class="mx-auto h-32 w-32 " />
+                                    </a>
                                 </div>
+                                <div class="text-center">
+                                    <p class="text-2xl text-gray-800 dark:text-white">
+                                        JHONSKY
+                                    </p>
+                                    <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+                                        SMMA
+                                    </p>
+                                    <p class="max-w-xs py-4 font-light text-gray-500 text-md dark:text-gray-400">
+                                        The social media marketing agency
+                                    </p>
+                                </div>
+
                             </div>
                             <div class="p-4">
-                                <div class="flex-col  flex justify-center items-center">
-                                    <div class="flex-shrink-0">
-                                        <a href="#" class="relative block">
-                                            <img alt="profil" src="/images/person/5.jpg" class="mx-auto object-cover rounded-full h-20 w-20 " />
-                                        </a>
-                                    </div>
-                                    <div class="mt-2 text-center flex flex-col">
-                                       
-                                    </div>
+                                <div class="mb-4 text-center opacity-90">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src={cs} class="mx-auto h-52 w-52 " />
+                                    </a>
                                 </div>
+                                <div class="text-center">
+                                    <p class="text-2xl text-gray-800 dark:text-white">
+                                        Campus spain
+                                    </p>
+                                    <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+                                        Agency
+                                    </p>
+                                    <p class="max-w-xs py-4 font-light text-gray-500 text-md dark:text-gray-400">
+                                        Agency of studies in spain
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="p-4">
+                                <div class="mb-4 text-center opacity-90">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src={as} class="mx-auto h-40 w-40 " />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl text-gray-800 dark:text-white">
+                                        Association
+                                    </p>
+                                    <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+                                        Association
+                                    </p>
+                                    <p class="max-w-xs py-4 font-light text-gray-500 text-md dark:text-gray-400">
+                                        Association
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class="p-4">
+                                <div class="mb-4 text-center opacity-90">
+                                    <a href="#" class="relative block">
+                                        <img alt="profil" src={mr} class="mx-auto h-60 w-60 " />
+                                    </a>
+                                </div>
+                                <div class="text-center">
+                                    <p class="text-2xl text-gray-800 dark:text-white">
+                                        La marquesa
+                                    </p>
+                                    <p class="text-xl font-light text-gray-500 dark:text-gray-200">
+                                        Commerce
+                                    </p>
+                                    <p class="max-w-xs py-4 font-light text-gray-500 text-md dark:text-gray-400">
+                                        Commerce store of noroccan truditional cloths
+                                    </p>
+                                </div>
+
                             </div>
                         </div>
                     </div>
+
 
                 </div>
             </div>
@@ -69,3 +131,10 @@ const WhatWeDo = () => {
 };
 
 export default WhatWeDo;
+
+
+
+
+
+
+
