@@ -1,11 +1,5 @@
 /* Navbar.css */
 
-.nav-item:hover {
-    color: white;
-    /* Change the text color to white */
-    text-shadow: none;
-    /* Remove the shadow effect */
-}
 
 /* Navbar item styles */
 .navbar-nav li.nav-item {
@@ -15,7 +9,7 @@
 
 /* Hover effect styles */
 .navbar-nav li.nav-item:hover .nav-link {
-    color: #ffffff;
+    color: goldenrod;
     /* Set hover color to white */
 }
 
